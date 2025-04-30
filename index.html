@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dialogue">
+            <h1 style="line-height: 50px;"><span style="color:rgb(11, 116, 145)">O_O</span> Buttons are friends..
+                <br>&nbsp;&nbsp;&nbsp; Push them wisely...</h1>
+        </div>
+        <div class="calculator">
+            <input type="text" id="display" readonly />
+            <div class="buttons">
+                <button class="clear-button" onclick="clearDisplay()">C</button>
+                <div class="letters" style="font-size: 12px;" onclick="press('<')">⌫</div>
+
+                <div onclick="press('1byX')">¹∕ₓ</div>
+                <div onclick="press('x2')">x²</div>
+                <div onclick="press('²√x')">²√x</div>
+                <div class="symbols" onclick="press('/')">÷</div>
+
+                <div onclick="press('7')">7</div>
+                <div onclick="press('8')">8</div>
+                <div onclick="press('9')">9</div>
+                <div class="symbols" onclick="press('*')">×</div>
+
+                <div onclick="press('4')">4</div>
+                <div onclick="press('5')">5</div>
+                <div onclick="press('6')">6</div>
+                <div class="symbols" onclick="press('-')">-</div>
+
+                <div onclick="press('1')">1</div>
+                <div onclick="press('2')">2</div>
+                <div onclick="press('3')">3</div>
+                <div class="symbols" onclick="press('+')">+</div>
+
+                <div class="symbols" onclick="press('±')">±</div>
+                <div onclick="press('0')">0</div>
+                <div onclick="press('.')">.</div>
+                <div class="equal" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
